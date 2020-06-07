@@ -29,6 +29,7 @@ cd NCEPLIBS
 
 ### 3. Build NCEPLIBS and install libraries
 
+##### (3.1) Prepare the enviroment
 You will need to load appropriate modules (or setting up correct enviromental varaibles) required by the build process.
 
 For example, here is what we used at one computing platform:
@@ -37,29 +38,37 @@ For example, here is what we used at one computing platform:
 5) mkl/2018.0.5   6) netcdf/4.7.3  7) cmake/3.16.4
 ```
 
-Set the enviroment varaibles CC, CXX and FC. Here is an example:
+##### (3.2) Set the enviroment varaibles CC, CXX and FC
+Here is an example:
 ```
 setenv CC icc; setenv CXX icpc; setenv FC ifort
 ```
 
-Build...
+##### (3.3) Build...
 ```
  mkdir build;  cd build
  cmake ..
  make -j8
 ```
 
-Install...
+##### (3.4) Install...
 ```
  make install
 ```
 
 ### 4. make links
 
-The libraries are under the `build/install/lib` directory and each file has a version number in the filename (see below). 
-The build.comgsi tries to find files without version numbers in their names. The "linklibs" script in the GSILIBS repo can do this in batch. 
+The compiled libraries are under the `build/install/lib` directory and each file has a version number in the filename (see below). 
 
-Assuming GSILIBS/ and NCEPLIBS/ are under the same parent directory.
+The build.comgsi script tries to find files without version numbers in their names as follows:
+```
+export W3NCO_LIBd=${NCEPLIBS}/lib/libw3nco_d.a
+export W3NCO_LIB4=${NCEPLIBS}/lib/libw3nco_4.a
+```
+
+The "linklibs" script in the GSILIBS repo can remove version numbers in the filename for all libraries.
+
+Assuming GSILIBS/ and NCEPLIBS/ are under the same parent directory:
 ```
 cd build/install/lib
 ../../../../GSILIBS/linklibs
