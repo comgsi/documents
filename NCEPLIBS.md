@@ -3,7 +3,7 @@
 **The [UFS support forum](https://forums.ufscommunity.org) provides helps on how to build NCEPLIBS. Please submit your questions there.**
 
 The following is just to share our experiences on building parts of NCEPLIBS to meet the GSI requirement.
-*this method may avoid the need to compile NCEPLIBS-external if your system already has the following libraries installed: MPI zlib HDF5 NetCDF4 libpng*
+*This method may avoid the need to compile NCEPLIBS-external if your system already has the following libraries installed: MPI zlib HDF5 NetCDF4 libpng*
 
 ### 1. Clone NCEPLIBS from Github
 ```
