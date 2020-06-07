@@ -7,11 +7,11 @@ git clone https://github.com/comgsi/GSI
 cd GSI
 ush/build.comgsi
 ```
-The build.comgsi script will load required modules, set required environmental varialbes and build GSI, regional EnKF and other utilities. All executables are under the build/bin directory.
+The build.comgsi script will load required modules, set required environmental variables and build GSI, regional EnKF and other utilities. All executables are under the build/bin directory.
 
 # 2. Community users:
 
-With the transition of NOAA GSI/EnKF codes to Github, the origial (outdated) libsrc/ was removed and those libraries will come from the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) repository released by [UFS](https://github.com/ufs-community/ufs-weather-model/wiki).  For how to build NCEPLIBS, please seek helps from the [UFS support forum](https://forums.ufscommunity.org).
+With the transition of NOAA GSI/EnKF codes to Github, the original (outdated) libsrc/ was removed and those libraries will come from the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) repository released by [UFS](https://github.com/ufs-community/ufs-weather-model/wiki).  For how to build NCEPLIBS, please seek helps from the [UFS support forum](https://forums.ufscommunity.org).
 
 Community users can follow these steps to build GSI/EnKF:
 
@@ -50,20 +50,20 @@ module load mkl
 module load netcdf
 module load cmake/3.16.4
 ```
-#### (3) change the following three variables in the ush/build.comgsi script based on your computer enviroment
+#### (3) change the following three variables in the ush/build.comgsi script based on your computing environment
     modulefile="/my/modulefile.me.GSI_UPP_WRF"
     NCEPLIBS="/my/NCEPLIBS/b_intel18.0.5_impi2018.4.274/install"
     GSILIBS="/my/GSILIBS/b_intel18.0.5_impi2018.4.274/"
 
 #### (4) run "ush/build.comgsi" from the main GSI directory
 
-**NOTE** For those who don't have the envorimental module system in your computing platform, you may follow the ush/build.comgsi script on how to set up enviormental variables and then do the compling.
+**NOTE** For those who don't have the environmental module system in your computing platform, you may follow the ush/build.comgsi script on how to set up environmental variables and then do the compiling.
 
 ## 2.4. fix files
 You can get some basic fix files from the comgsi/fix repository:
 ```
 git clone https://github.com/comgsi/fix
 ```
-For a complete set of fix files, please downlod them from the [DTC website](https://dtcenter.org/community-code/gridpoint-statistical-interpolation-gsi/download). 
+For a complete set of fix files, please download them from the [DTC website](https://dtcenter.org/community-code/gridpoint-statistical-interpolation-gsi/download). 
 
 If you have any questions, please contact gsi-help@ucar.edu. 
