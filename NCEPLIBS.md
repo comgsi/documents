@@ -29,7 +29,7 @@ cd NCEPLIBS
 
 ### 3. Build NCEPLIBS and install libraries
 
-##### (3.1) Prepare the enviroment
+##### 3.1 Prepare the enviroment
 You will need to load appropriate modules (or setting up correct enviromental varaibles) required by the build process.
 
 For example, here is what we used at one computing platform:
@@ -38,29 +38,29 @@ For example, here is what we used at one computing platform:
 5) mkl/2018.0.5   6) netcdf/4.7.3  7) cmake/3.16.4
 ```
 
-##### (3.2) Set the enviroment varaibles CC, CXX and FC
+##### 3.2 Set the enviroment varaibles CC, CXX and FC
 Here is an example:
 ```
 setenv CC icc; setenv CXX icpc; setenv FC ifort
 ```
 
-##### (3.3) Build...
+##### 3.3 Build...
 ```
  mkdir build;  cd build
  cmake ..
  make -j8
 ```
 
-##### (3.4) Install...
+##### 3.4 Install...
 ```
  make install
 ```
 
 ### 4. make links
 
-The compiled libraries are under the `build/install/lib` directory and each file has a version number in the filename (see below). 
+The compiled libraries are under the `build/install/lib` directory and each file has version numbers in the filename (see below). These version numbers may change with different NCEPLIBS releases.
 
-The build.comgsi script tries to find files without version numbers in their names as follows:
+The build.comgsi script tries to find files without version numbers in their names, as follows:
 ```
 export W3NCO_LIBd=${NCEPLIBS}/lib/libw3nco_d.a
 export W3NCO_LIB4=${NCEPLIBS}/lib/libw3nco_4.a
@@ -74,13 +74,12 @@ cd build/install/lib
 ../../../../GSILIBS/linklibs
 ```
 
-Now you should have something as this:
+Now you should have something as follows:
 ```
  libw3nco_4.a -> ./libw3nco_v2.1.0_4.a
  libw3nco_8.a -> ./libw3nco_v2.1.0_8.a
  libw3nco_d.a -> ./libw3nco_v2.1.0_d.a
 ```
-
 
 
 
