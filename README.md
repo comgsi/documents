@@ -11,14 +11,14 @@ The build.comgsi script will load required modules, set required environmental v
 
 # 2. Community users:
 
-With the transition of NOAA GSI/EnKF codes to Github, the original (outdated) libsrc/ was removed and those libraries will come from the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) repository released by [UFS](https://github.com/ufs-community/ufs-weather-model/wiki).  For how to build NCEPLIBS, please seek helps from the [UFS support forum](https://forums.ufscommunity.org).
+With the transition of NOAA GSI/EnKF codes to Github, the original (outdated) libsrc/ was removed and those libraries will come from the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) repository released by [UFS](https://github.com/ufs-community/ufs-weather-model/wiki).
 
 Community users can follow these steps to build GSI/EnKF:
 
 ## 2.1. build bufrlib and wrfio lib
 This extra step is required as NCEPLIBS does not release bufrlib and wrfio lib at this moment. In the future, when NCEPLIBS includes these two libraries, this step will not be needed.
 
-You can build these two libraries from the [comgsi/GSILIBS](https://github.com/comgsi/GSILIBS) repo at Github as follows:
+You can build these two libraries from the [comgsi/GSILIBS](https://github.com/comgsi/GSILIBS) repository at Github as follows:
 ```
 git clone https://github.com/comgsi/GSILIBS
 cd GSILIBS
@@ -29,13 +29,13 @@ make -j8
 The compiled libraries will be under the build/lib directory. You will need this path in step 2.3.3.
 
 ## 2.2 build NCEPLIBS
-The [UFS support forum](https://forums.ufscommunity.org) provides helps on how to build NCEPLIBS. Please submit your questions there.
+The [UFS support forum](https://forums.ufscommunity.org) provides help on how to build NCEPLIBS. Please submit your questions there.
 
-FYI, [Here is a quick summary](NCEPLIBS.md) how we installed NCEPLIBS.
+FYI, [Here is a quick summary](NCEPLIBS.md) of how we installed NCEPLIBS.
 
 ## 2.3. build GSI/EnKF
 
-#### (1) Clone the comgsi/GSI repo:
+#### (1) Clone the comgsi/GSI repository:
 ```
 git clone https://github.com/comgsi/GSI
 ```
