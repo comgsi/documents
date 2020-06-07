@@ -29,8 +29,8 @@ cd NCEPLIBS
 
 ### 3. Build NCEPLIBS and install libraries
 
-##### 3.1 Prepare the enviroment
-You will need to load appropriate modules (or setting up correct enviromental varaibles) required by the build process.
+##### 3.1 Prepare the building environment
+You will need to load appropriate modules (or setting up correct environmental variables) required by the build process.
 
 For example, here is what we used at one computing platform:
 ```
@@ -38,7 +38,7 @@ For example, here is what we used at one computing platform:
 5) mkl/2018.0.5   6) netcdf/4.7.3  7) cmake/3.16.4
 ```
 
-##### 3.2 Set the enviroment varaibles CC, CXX and FC
+##### 3.2 Set the environment variables CC, CXX and FC
 Here is an example:
 ```
 setenv CC icc; setenv CXX icpc; setenv FC ifort
