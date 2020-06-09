@@ -11,7 +11,7 @@ The build.comgsi script will load required modules, set required environmental v
 
 # 2. Community users:
 
-With the transition of NOAA GSI/EnKF codes to Github, the original (outdated) libsrc/ was removed and those libraries will come from the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) repository released by [UFS](https://github.com/ufs-community/ufs-weather-model/wiki).
+With the transition of NOAA GSI/EnKF codes to Github, the original (outdated) libsrc/ was no longer used and those libraries will come from the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) repository released by [UFS](https://github.com/ufs-community/ufs-weather-model/wiki).
 
 Community users can follow these steps to build GSI/EnKF:
 
