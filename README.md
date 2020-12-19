@@ -66,4 +66,4 @@ git clone https://github.com/comgsi/fix
 ```
 For a complete set of fix files, please download them from the [DTC website](https://dtcenter.org/community-code/gridpoint-statistical-interpolation-gsi/download). 
 
-If you have any questions, please contact gsi-help@ucar.edu. 
+If you have any questions, please visit the GSI/EnKF user support forum: https://dtcenter.org/forum/gsi-enkf-user-support
