@@ -32,12 +32,12 @@ The above commands were tested on the commit `c566b943fc6ac648fd884c93e2ac86a181
 
 ## 2.2. build GSI/EnKF
 
-#### (1) Clone the comgsi/GSI repository:
+#### (1) Clone the GSI repository:
 ```
 git clone https://github.com/NOAA-EMC/GSI
 ```
 
-#### (2) load hpc-stack modules following this example (your hpc-intel, hpc-impi may have different version numbers)
+#### (2) load hpc-stack modules following the following example (your hpc-intel, hpc-impi may have different version numbers)
 Be sure to module load intel, impi and netcdf first
 ```
 module use /path/to/hpc-stacks/modulefiles/stack
